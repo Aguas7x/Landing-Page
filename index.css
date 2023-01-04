@@ -1,0 +1,65 @@
+/*reset css*/
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+/*general styles*/
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*header*/
+header{
+    background-color: #775454f8;
+    color: #fff;
+    padding: 20px 0;
+}
+
+nav{
+    align-items: center;
+    display:flex;
+    justify-content: space-between;
+}
+
+/*container class general*/
+.container{
+    margin:0 auto;
+    max-width:80%;
+}
+
+.nav-list{
+    display:flex;
+    list-style:none;
+    gap:20px;
+
+}
+
+.buttonnav{
+    border: 2.5px solid rgb(159, 148, 199)
+}
+
+.nav-list a{
+    text-decoration: none;
+    color: rgb(252, 255, 246);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.logo img{
+    width: 100%;
+}
+
+
+/* Media queries */
+/*Resposive tablets*/
+@media screen and (max-width: 992px) {
+
+    
+}
+
+/*Responsive mobil*/
+@media screen and (max-width: 768px) {
+
+}
