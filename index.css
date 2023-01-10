@@ -101,12 +101,24 @@ nav{
 .hero-image{
     display:flex;
     justify-content: end;
+   
 }
 
 .hero-image img{
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
+    /* display:grid;
+    grid-template-columns: 1fr 1fr; */
+    width: 200px;
+    transition: width 0.9s, height 0.9s;
+
 }
+
+.hero-image img:hover {
+    width: 250px;
+    /* height: 250px; */
+   
+    
+  }
+
 
 .hero-list{
     /* display:flex; */
@@ -115,11 +127,36 @@ nav{
     line-height: 25px;
 }
 
+/*servics cards*/
+.services{
+    background-color: #e3e3e3;
+    padding: 50px 0;
+    width:100%;
+}
+.cards-container{
+    padding-top:50px;
+    display:grid;
+    gap:15px;
+    grid-template-columns: repeat(4,1fr);
+}
+.card{
+    background-color: #fff;
+    box-shadow: 1px 2px 10px #00000040;
+    border-radius: 10px;
+    height:500px;
+    width:100%;
 
+}
 
-
-
-
+.images{
+     align-items: center;
+    display:flex; 
+    /* justify-content: center;  */
+    padding-top:50px;
+    gap:10px;
+    height: 20px;
+    width: 20px;
+}
 
 /* Media queries */
 /*Resposive tablets*/
