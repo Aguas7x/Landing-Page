@@ -10,25 +10,22 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+
 /*header*/
 header{
     background-color: #060713f8;
-    color: #fff;
     padding: 10px 0;
 }
 
+.logo img{
+    width: 100%;
+}
+
+/* Nav list */
 nav{
 
     display:flex;
     justify-content: space-between;
-}
-
-/*container class general*/
-.container{
-    margin:0 auto;
-    max-width:1200px;
-    width:90%;
-
 }
 
 .nav-list{
@@ -54,46 +51,55 @@ nav{
     background-color: var(--color-secondary);
     cursor: pointer;
     color: rgb(30, 133, 26);
-    /* color: rgb(138, 97, 97); */
     scale: 1.1;
 }
 
-/* .btn-circle {
-    border-radius: 80%;
-    width: 3rem;
-    height: 3rem;
-    align-items: center;
-} */
+
+/*container class general*/
+.container{
+    margin:0 auto;
+    max-width:1400px;
+    width:90%;
+
+}
 
 .btn {
-    /* background-color: (none);
-    color: none ; */
     padding: 1rem 1rem;
-    /* border: 2.5px solid rgb(65, 156, 96); */
     cursor: pointer;
     font-family: 'Montserrat';
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: 600;
     transition: all 0.3s ease;
-    
-    
-}
-
-.nav-network ul {
-    display: flex;
-    gap: 1rem;
-    list-style:none;
-    
 }
 
 
-.logo img{
+/* Hero.............*/
+.hero{
+    background-color: #807c7c50;
+    color:rgb(99, 34, 34);
+    padding: 50px 0;
     width: 100%;
 }
 
-/*Slider..........*/
+.hero-elements{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+}
 
+.hero-image img{
+
+    width: 200px;
+    transition: width 0.9s, height 0.9s;
+}
+
+.hero-list{
+    list-style: none;
+    line-height: 30px;
+}
+
+
+/*Slider..........*/
 .slider{
   width: 90%;
   height: 300px;
@@ -131,56 +137,7 @@ nav{
 }
 }
 
-/* Hero.............*/
-
-.hero{
-    background-color: #807c7c50;
-    color:rgb(23, 24, 112);
-    padding: 50px 0;
-    width: 100%;
-}
-
-.hero-elements{
-    display:grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.hero-h1{
-    color:rgb(20, 69, 97);
-}
-
-.hero-image{
-    display:flex;
-    justify-content: end;
-
-}
-
-.hero-image img{
-    /* display:grid;
-    grid-template-columns: 1fr 1fr; */
-    width: 200px;
-    transition: width 0.9s, height 0.9s;
-
-}
-
-.hero-image img:hover {
-    width: 250px;
-    /* height: 250px; */
-
-
-  }
-
-
-.hero-list{
-    /* display:flex; */
-    /* gap:0px; */
-    list-style: none;
-    line-height: 30px;
-    
-}
-
-/*servicios/cards*/
-
+/* SERVICIOS CARDS */
 .title {
     font-size: 2rem;
     font-weight: 600;
@@ -199,16 +156,17 @@ nav{
     font-weight: 600;
     display: inline;
 }
+
 .productos-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
     padding: 1rem 0;
     width:auto;
 }
 
 section{
-    padding: 2rem 0;
+    padding: 3rem 0;
 }
 
 .card {
@@ -225,20 +183,13 @@ section{
 
 }
 
-.card .card-img {
-    width: 5%;
-    height: 50%;                                                               
-    background-color: var(--color-primary);
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    /* justify-content: center; */
-    /* align-items: center; */
+.card .card-img img{
+    height: 200px;
+    width: 300px;
 }
 
 .card:hover {
     background-color: var(--color-secondary);
-    /* cursor: pointer; */
     color: rgb(138, 48, 48);
     scale: 1.05;
 }
@@ -247,10 +198,13 @@ section{
     cursor: pointer;
 }
 
+.accesos-directos:hover{
+    scale: 1.6;
+}
 
 
 
-.services{
+.Texto-final{
     background-color: #e3e3e3;
     padding: 50px 0;
     width:100%;
@@ -323,17 +277,58 @@ footer {
     gap: 1rem;
 }
 
+.nav-network ul {
+    display: flex;
+    gap: 1rem;
+    list-style:none;
+}
+
+.btn img:hover{
+    cursor: pointer;
+    scale: 1.2;
+}
 
 
 
 /* Media queries */
 /*Resposive tablets*/
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 993px) and (min-width: 770px){
+    .productos-container{
+        grid-template-columns: repeat(2, 1fr) ;
 
+    }
+
+    .nav-list{
+        display: flex;
+        list-style: none;
+        gap:5px;
+        align-items: center;
+        width: 60%;
+    }
+
+    .nav-list a{
+        border-radius: 10px;
+        padding: 0;
+    }
 
 }
 
 /*Responsive mobil*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
+    .productos-container{
+        grid-template-columns: repeat(1, 1fr) ;
 
+    }
+    .nav-list{
+        display: flex;
+        list-style: none;
+        gap:5px;
+        align-items: center;
+        width: 84%;
+    }
+
+    .nav-list a{
+        border-radius: 10px;
+        padding: 0;
+    }
 }

@@ -41,8 +41,7 @@ nav{
 
 .icon-home{
 
-    width: 18px;
-    border-radius: 20px;
+    width: 50px;
 }
 
 .nav-list a{
@@ -105,4 +104,51 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #45a049;
+}
+
+/* Media queries */
+/*Resposive tablets*/
+@media screen and (max-width: 993px) {
+    .productos-container{
+        grid-template-columns: repeat(2, 1fr) ;
+
+    }
+
+    .nav-list{
+        display: flex;
+        list-style: none;
+        gap:10px;
+        align-items: center;
+        width: 50%;
+    }
+
+    .nav-list a{
+        border-radius: 20px;
+        padding: 5px;
+    }
+
+}
+
+/*Responsive mobil*/
+@media screen and (max-width: 769px) {
+    .nav-list{
+        display: flex;
+        list-style: none;
+        gap:10px;
+        align-items: center;
+        width: 350px;
+    }
+
+    .nav-list a{
+        border-radius: 15px;
+        padding: 0;
+    }
+
+    .container nav{
+        display: flex;
+        align-items: center;
+        gap:60px;
+        width: 100%;
+        
+    }
 }
