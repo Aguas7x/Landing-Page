@@ -131,7 +131,7 @@ nav{
     75%{margin-left: -300%;}
     100%{margin-left: -300%;}
 }
-@media only screen and (min-width:320px) and (max-width:768px){
+@media only screen and (min-width:320px) and (max-width:742px){
 .slider, .slider ul, .slider img{
     height: 100vh;
 }
@@ -314,7 +314,7 @@ footer {
 }
 
 /*Responsive mobil*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px){
     .productos-container{
         grid-template-columns: repeat(1, 1fr) ;
 
