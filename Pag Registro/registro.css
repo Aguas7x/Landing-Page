@@ -108,7 +108,7 @@ input[type="submit"]:hover {
 
 /* Media queries */
 /*Resposive tablets*/
-@media screen and (max-width: 993px) {
+@media screen and (max-width: 992px) {
     .productos-container{
         grid-template-columns: repeat(2, 1fr) ;
 
@@ -130,7 +130,7 @@ input[type="submit"]:hover {
 }
 
 /*Responsive mobil*/
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
     .nav-list{
         display: flex;
         list-style: none;
